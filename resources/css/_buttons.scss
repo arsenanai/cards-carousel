@@ -1,0 +1,70 @@
+/* this file is for styling buttons */
+
+.card-btn-sm{
+  @apply h-10 px-4 font-medium text-xs
+}
+
+.card-btn {
+  @apply flex flex-row justify-center rounded-lg align-middle space-x-2 
+  border-0 shadow-none;
+}
+
+.card-btn:focus, .btn-circle:focus{
+  @apply outline-none ring;
+}
+
+.card-btn-blue {
+  @apply bg-mainColor text-whiteBrand;
+}
+
+.card-btn-blue:hover {
+  @apply bg-mainDarker;
+}
+
+.card-btn-blue:active {
+  @apply bg-mainColor;
+}
+
+.card-btn:disabled{
+  @apply bg-greySecondary cursor-auto;
+}
+
+.card-btn-green {
+  @apply bg-greenBrand text-white;
+}
+
+.card-btn-green:hover {
+  @apply bg-greenDarker;
+}
+
+.card-btn-green:active {
+  @apply bg-greenBrand;
+}
+
+.btn-circle{
+  @apply h-11 w-11 bg-white border border-greyBorder border-none rounded-full text-activeSecondary shadow-none;
+}
+
+.btn-circle:hover{
+  @apply bg-activeSecondary border-activeSecondary text-white;
+}
+
+.card-btn-blue-outline {
+  @apply border border-mainColor text-mainDarker;
+}
+
+.card-btn-blue-outline:hover {
+  @apply border-0 bg-mainDarker text-white;
+}
+
+.card-btn-blue-outline:active {
+  @apply border-0 bg-mainColor text-white;
+}
+
+.wish-btn-img {
+  content: url('../../assets/icons/heart.svg');
+  @apply border-0 shadow-none;
+}
+.wish-btn:active .wish-btn-img{
+  content: url('../../assets/icons/heart-full.svg');
+}

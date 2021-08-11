@@ -1,0 +1,28 @@
+#reviews-slider{ 
+    /* width */
+    &::-webkit-scrollbar {
+        @apply h-1.5
+    }
+        
+    /* Track */
+    &::-webkit-scrollbar-track {
+        @apply bg-transparent
+    }
+        
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+        @apply rounded-full bg-yellowBrand
+    }
+        
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+        @apply bg-yellow-500
+    }
+    &::-webkit-scrollbar-track-piece:end {
+        @apply mr-5/12 laptop:mr-4/12
+    }
+    
+    &::-webkit-scrollbar-track-piece:start {
+        @apply ml-5/12 laptop:ml-4/12
+    }
+}
