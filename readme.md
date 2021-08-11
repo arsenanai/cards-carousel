@@ -4,4 +4,4 @@
 
 - npm install
 - npm run prod
-- vizit index.html
+- visit index.html
